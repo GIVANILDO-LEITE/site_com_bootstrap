@@ -1,74 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação de Formulário com JS</title>
-    <link rel="stylesheet" href="contato.css">
-</head>
-    
-</head>
-<body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MInha Imobiliária</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      href=".//contato.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="contato.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      href="script.js"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h2>Crie sua Conta</h2>
-        </div>
-        <form class="form" id="form">
-
-            <div class="form-control">
-
-                <label for="username" >Nome</label>
-                <input type="text" id="username">
-                <i class="img-success" ><img src="imagens/sucess.png" width="25" height="25" alt=""></i>
-                <i class="img-error" ><img src="imagens/error.png" width="25" height="25" alt=""></i>
-
-                <small>Error Message</small>
-
+      <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+          <div class="container py-3">
+            <a class="navbar-brand" href="#">
+              <img src="../imagens/imovi-icon.png" alt="iMovi" />
+              <span>iMovi</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-items"
+              aria-controls="navbar-items"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Páginas/projetos.html">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Páginas/imóveis.html">Imóveis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contato</a>
+                </li>
+              </ul>
             </div>
-
-            <div class="form-control">
-
-                <label>Email</label>
-                <input type="email" id="email">
-                <i class="img-success" ><img src="imagens/sucess.png" width="25" height="25" alt=""></i>
-                <i class="img-error" ><img src="imagens/error.png" width="25" height="25" alt=""></i>
-
-                <small>Error Message</small>
-
-            </div>
-
-            <div class="form-control">
-
-                <label>Senha</label>
-                <input type="password" id="password">
-                <i class="img-success" ><img src="imagens/sucess.png" width="25" height="25" alt=""></i>
-                <i class="img-error" ><img src="imagens/error.png" width="25" height="25" alt=""></i>
-
-                <small>Error Message</small>
-
-            </div>
-
-            <div class="form-control">
-
-                <label>Confirme sua senha</label>
-                <input type="passwordtwo" id="password-two">
-                <i class="img-success" ><img src="imagens/sucess.png" width="25" height="25" alt=""></i>
-                <i class="img-error" ><img src="imagens/error.png" width="25" height="25" alt=""></i>
-
-                <small>Error Message</small>
-
-            </div>
-
-            <button type="submit" >ENVIAR</button>
-        </form>
+          </div>
+        </nav>
     </div>
-  
-    
-  </body>
+      <section id="cadastro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <h2>Cadastro</h2>
+              <p>Faça seu cadastro para ficar por dentro de nossas novidades</p>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <form class="form">
+                <div class="input-group">
+                  <input  class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                </div>
+                <div class="input-group">
+                  <input  class="form-control" type="text" name="nome" placeholder="digite seu e-mail">
+                </div>
+                <div class="input-group">
+                  <input  class="form-control" type="text" name="nome" placeholder="cidade onde mora">
+                </div>
+                <div class="input-group">
+                  <input  class="form-control" type="text" name="nome" placeholder="bairro onde mora">
+                </div>
+                <div class="input-group">
+                  <input  class="form-control" type="text" name="nome" placeholder="complemento">
+                </div>
+                <div class="input-group">
+                  <textarea class="form-control" name="" rows="5">
+                  </textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-success">Solicitar Orçamento</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" href="script.js"></script>
-  <script src="script.contato.js" !important></script> 
+  <script src="script.contato.js"></script> 
 
 </body>
 </html>
